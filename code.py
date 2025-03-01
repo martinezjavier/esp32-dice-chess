@@ -1,6 +1,6 @@
 """
-This module allows to show random chess pieces on an ST7735R display, when
-driven by an ESP2 S2 Mini board. The goal is to be used instead of a dice
+This module allows to show random chess pieces on an ST7789V display, when
+driven by an T-Display-S3 board. The goal is to be used instead of a dice
 in a dice chess game.
 """
 
@@ -13,32 +13,23 @@ import time
 # pylint: disable=E0401
 
 import board
-import busio
 import digitalio
 import displayio
-import fourwire
 
 import adafruit_imageload
-import adafruit_st7735r
 
-WIDTH = 128
-HEIGHT = 128
+WIDTH = 320
+HEIGHT = 170
 
-button = digitalio.DigitalInOut(board.IO0)
-button.direction = digitalio.Direction.INPUT
-button.pull = digitalio.Pull.UP
+button0 = digitalio.DigitalInOut(board.BUTTON0)
+button0.direction = digitalio.Direction.INPUT
+button0.pull = digitalio.Pull.UP
 
-# Release any resources currently in use for the displays
-displayio.release_displays()
+button1 = digitalio.DigitalInOut(board.BUTTON1)
+button1.direction = digitalio.Direction.INPUT
+button1.pull = digitalio.Pull.UP
 
-spi = busio.SPI(board.IO7, MOSI=board.IO11)
-
-tft_cs = board.IO5
-tft_dc = board.IO3
-
-display_bus = fourwire.FourWire(spi, command=tft_dc, chip_select=tft_cs, reset=board.IO9)
-
-display = adafruit_st7735r.ST7735R(display_bus, width=WIDTH, height=HEIGHT, colstart=2, rowstart=1)
+display = board.DISPLAY
 
 chess_pieces = {
     0: "data/bishop.jpg",
@@ -103,8 +94,12 @@ if __name__ == "__main__":
     show_random_piece(group)
 
     while True:
-        if button.value is False:
+        if button0.value is False:
             group = create_background()
             show_random_piece(group)
         else:
             time.sleep(0.1)
+
+        if button1.value is False:
+            display.brightness = not display.brightness
+            time.sleep(0.5)

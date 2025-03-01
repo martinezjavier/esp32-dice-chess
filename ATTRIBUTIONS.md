@@ -1,6 +1,6 @@
 # Image Attributions
 
-The following chess piece images used in the `data/` directory of this project are derived from Wikimedia Commons. Each image has been resized to fit the resolution of the ST7735R display used in this project.
+The following chess piece images used in the `data/` directory of this project are derived from Wikimedia Commons. Each image has been resized to fit the resolution of the ST7789V display used in this project.
 
 ## `data/bishop.jpg`
 
@@ -9,7 +9,7 @@ The following chess piece images used in the `data/` directory of this project a
 *   Source: https://commons.wikimedia.org/wiki/File:Bishop_Chess.jpg
 *   License: This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license.
 *   License URL: https://creativecommons.org/licenses/by-sa/3.0/
-*   Modifications: Resized to fit the resolution of the ST7735R display.
+*   Modifications: Resized to fit the resolution of the ST7789V display.
 
 ## `data/king.jpg`
 
@@ -18,7 +18,7 @@ The following chess piece images used in the `data/` directory of this project a
 *   Source: https://commons.wikimedia.org/wiki/File:King_Chess.jpg
 *   License: This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license.
 *   License URL: https://creativecommons.org/licenses/by-sa/3.0/
-*   Modifications: Resized to fit the resolution of the ST7735R display.
+*   Modifications: Resized to fit the resolution of the ST7789V display.
 
 ## `data/knight.jpg`
 
@@ -27,7 +27,7 @@ The following chess piece images used in the `data/` directory of this project a
 *   Source: https://commons.wikimedia.org/wiki/File:Knight_Chess.jpg
 *   License: This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license.
 *   License URL: https://creativecommons.org/licenses/by-sa/3.0/
-*   Modifications: Resized to fit the resolution of the ST7735R display.
+*   Modifications: Resized to fit the resolution of the ST7789V display.
 
 ## `data/pawn.jpg`
 
@@ -36,7 +36,7 @@ The following chess piece images used in the `data/` directory of this project a
 *   Source: https://commons.wikimedia.org/wiki/File:Pawn_Chess.jpg
 *   License: This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license.
 *   License URL: https://creativecommons.org/licenses/by-sa/3.0/
-*   Modifications: Resized to fit the resolution of the ST7735R display.
+*   Modifications: Resized to fit the resolution of the ST7789V display.
 
 ## `data/queen.jpg`
 
@@ -45,7 +45,7 @@ The following chess piece images used in the `data/` directory of this project a
 *   Source: https://commons.wikimedia.org/wiki/File:Queen_Chess.jpg
 *   License: This file is licensed under the Creative Commons Attribution-Share Alike 3.0 Unported license.
 *   License URL: https://creativecommons.org/licenses/by-sa/3.0/
-*   Modifications: Resized to fit the resolution of the ST7735R display.
+*   Modifications: Resized to fit the resolution of the ST7789V display.
 
 ## `data/rook.jpg`
 
@@ -54,4 +54,4 @@ The following chess piece images used in the `data/` directory of this project a
 *   Source: https://commons.wikimedia.org/wiki/File:Rook_(Chess)_kopio.jpg
 *   License: This file is licensed under the Creative Commons Attribution-Share Alike 4.0 International license.
 *   License URL: https://creativecommons.org/licenses/by-sa/4.0/
-*   Modifications: Resized to fit the resolution of the ST7735R display.
+*   Modifications: Resized to fit the resolution of the ST7789V display.
