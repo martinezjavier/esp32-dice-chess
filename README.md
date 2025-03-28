@@ -1,8 +1,12 @@
-# Chess Piece Randomizer for LILYGO T-Display-S3
+# CircuitPython program to play Dice Chess on an ESP32 board
 
 ## Description
 
-This project implements a chess piece randomizer using a LILYGO T-Display-S3 board. It's designed to replace a traditional dice in a dice chess game, randomly displaying chess pieces on the integrated screen when activated.
+This project implements a chess piece randomizer using a LILYGO T-Display-S3 board. It's designed to replace a traditional die in a dice chess game, randomly displaying chess pieces on the integrated screen each time that a button is pressed.
+
+## Photos
+
+![An ESP32 board running the esp32-dice-chess program](photos/esp32-dice-chess.jpg)
 
 ## Features
 
@@ -13,7 +17,7 @@ This project implements a chess piece randomizer using a LILYGO T-Display-S3 boa
 
 ## Hardware Requirements
 
-- LILYGO T-Display-S3 board (includes ESP32-S3 and integrated display)
+- LILYGO T-Display-S3 board (includes an ESP32-S3 with integrated display)
 - Push button connected to GPIO0
 
 ## Software Dependencies
@@ -45,6 +49,7 @@ This project implements a chess piece randomizer using a LILYGO T-Display-S3 boa
 
 ## Customization
 
+- Replace `board.BUTTON0` and `board.BUTTON1` to match buttons used to choose a piece and turn the display on and off.
 - Modify the `chess_pieces` dictionary in `code.py` to change the available pieces or their corresponding image files.
 - Adjust the `WIDTH` and `HEIGHT` constants if necessary to match the display dimensions.
 
